@@ -143,7 +143,7 @@ def getBlankPosition(board):  # нахождение пустой клетки
                 return (x, y)
 
 
-def makeMove(board, move): #  обновление доски
+def makeMove(board, move):  # обновление доски
     blankx, blanky = getBlankPosition(board)
 
     if move == UP:
@@ -285,7 +285,7 @@ def generateNewPuzzle(numSlides):  # решает головомку с помо
     return (board, sequence)
 
 
-def resetAnimation(board, allMoves):  # меняет все сделанные ходы местами, чтобы решить головоломку
+def resetAnimation(board, allMoves):  # отменяет все сделанные ходы местами, чтобы решить головоломку
     revAllMoves = allMoves[:]
     revAllMoves.reverse()
 
