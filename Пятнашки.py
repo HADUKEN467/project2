@@ -27,8 +27,8 @@ BUTTONCOLOR = RED
 BUTTONTEXTCOLOR = BLACK
 MESSAGECOLOR = RED
 
-XBORDER = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) / 2)  # показывает, сколько пикселей 
-# находится на боковой стороне всей доски 
+XBORDER = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) / 2)  # показывает, сколько пикселей
+# находится на боковой стороне всей доски
 YBORDER = int((WINDOWHEIGHT - (TILESIZE * BOARDHEIGHT + (BOARDHEIGHT - 1))) / 2)
 
 UP = 'up'
@@ -63,7 +63,7 @@ def main():
 
         checkForQuit()
         for event in pygame.event.get():  # создание кликабительности кнопок
-            if event.type == MOUSEBUTTONUP:                 # x             y
+            if event.type == MOUSEBUTTONUP:  # x             y
                 spotx, spoty = getSpotClicked(mainBoard, event.pos[0], event.pos[1])
 
                 if (spotx, spoty) == (None, None):
@@ -212,7 +212,7 @@ def makeText(text, color, bgcolor, top,
     return (textSurf, textRect)
 
 
-def drawBoard(board, message): #  вывод доски на экран
+def drawBoard(board, message):  # вывод доски на экран
     DISPLAYSURF.fill(BGCOLOR)
     if message:
         textSurf, textRect = makeText(message, MESSAGECOLOR, BGCOLOR, 5, 5)
