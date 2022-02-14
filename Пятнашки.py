@@ -27,7 +27,8 @@ BUTTONCOLOR = RED
 BUTTONTEXTCOLOR = BLACK
 MESSAGECOLOR = RED
 
-XBORDER = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) / 2)
+XBORDER = int((WINDOWWIDTH - (TILESIZE * BOARDWIDTH + (BOARDWIDTH - 1))) / 2)  # показывает, сколько пикселей 
+# находится на боковой стороне всей доски 
 YBORDER = int((WINDOWHEIGHT - (TILESIZE * BOARDHEIGHT + (BOARDHEIGHT - 1))) / 2)
 
 UP = 'up'
